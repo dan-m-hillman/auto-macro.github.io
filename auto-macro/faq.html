@@ -488,7 +488,28 @@
             </p>
           </div>
         </div>
-  
+
+        <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary  border-top" aria-controls="faq-trouble-restoring-premium" aria-expanded="false" data-toggle="collapse" href="#faq-trouble-restoring-premium" role="button">
+          <div class="position-relative">
+            <h2 class="h4 m-0 pr-3">
+              Why is "Restore premium" button not restoring premium for me?
+            </h2>
+            <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+              <i class="fa fa-plus"></i>
+            </div>
+          </div>
+        </a>
+        <div class="collapse" id="faq-trouble-restoring-premium">
+          <div class="card card-body border-0 p-0">
+            <p>If you've previously bought premium with your apple account, you should be able to restore Auto Macro back to premium using the same Apple account. A few users have been experiencing issues with restoring premium.</p>
+            <p>I'm not sure what is happening with the Apple Purchase SDK for restoring purchases. HOWEVER there is a workaround.</p> 
+            <p>If you click on the "Purchase premium" button again, this will handle unlocking premium for you. Essentially since you've already bought premium, Apple will NOT charge you again for something that you already own. So the "Purchase premium" should do the same thing as what the "Restore premium" button should be doing. Give that a try. If it's still not working, delete the Auto Macro app, redownload it from the store, and try the "Purchase premium" button again. That seems to work for other users who have reached out to me with similar issues.</p>
+            <p>As I have explained above, Apple won't charge you again if you've already purchased this in-app purchase product with your apple id previously. Thanks again for purchasing Auto Macro and apologies for the issues you have experienced.</p>
+            <p>
+            </p>
+          </div>
+        </div>
+
         <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary  border-top" aria-controls="faq-why-review" aria-expanded="false" data-toggle="collapse" href="#faq-why-review" role="button">
           <div class="position-relative">
             <h2 class="h4 m-0 pr-3">
@@ -527,6 +548,7 @@
 
       </section>
     </section>
+
     <script>
         // index.html#{id}
         // e.g. index.html#faq-22
@@ -534,5 +556,6 @@
             $(location.hash + ".collapse").collapse("show");
         }
     </script>
+
   </body>
 </html>
